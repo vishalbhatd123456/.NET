@@ -1,0 +1,10 @@
+Action filter executes before and after an action method executes.
+
+Action filter attributes can be applied to an individual action method or a controller.
+
+Example : The OutputCache is a built-in action filter attribute that can be applied to an action method for which we want to cache the output. For example, the output of the following action method will be cached for 100 s.
+
+[OutputCache(Duration = 100)]
+public ActionResult Index(){
+  return View();
+  }

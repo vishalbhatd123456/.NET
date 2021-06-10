@@ -1,0 +1,8 @@
+Filters allows code to be run in specific stages before/after the code in specific pipelines.
+
+Built-In filters - used for authorization, response caching, etc.
+Custom Filters for cross-cutting features such as logging, exception handling, etc
+
+Filters run inside the .net core action-invokation pipeline, also called fiter-pipeline.
+
+Request -> Other middlewares -> Routing middlewares -> Action Selection -> MVC Action -> Action Selection -> Routing Middleware -> Other Middleware
